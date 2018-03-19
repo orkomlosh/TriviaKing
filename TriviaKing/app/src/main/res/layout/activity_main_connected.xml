@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sadna.triviaking.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btnScoreBoards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:text="@string/score_boards"
+        android:onClick="openScoreBoards"
+        android:textSize="16sp"
+        android:layout_above="@+id/txtLogOut"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/btnSearchForGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Search_for_game"
+        android:layout_marginBottom="54dp"
+        android:textSize="16sp"
+        android:onClick="searchForGame"
+        android:layout_above="@+id/btnScoreBoards"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:text="@string/logout"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:onClick="logOutUser"/>
+
+    <TextView
+        android:id="@+id/txtChangePass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="החלף סיסמא"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:onClick="ChangePassword"/>
+
+    <TextView
+        android:id="@+id/txtConnectedAs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:text="    מחובר כ:   "
+        android:textStyle="bold" />
+
+    />
+
+
+</RelativeLayout>

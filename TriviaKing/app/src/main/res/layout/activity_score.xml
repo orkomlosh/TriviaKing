@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sadna.triviaking.MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtPlayerHeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="נתוני שחקן" />
+
+    <TextView
+        android:id="@+id/txtLeaderBoardHeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtWins"
+        android:layout_marginTop="40dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="דירוג עולמי" />
+
+    <TextView
+        android:id="@+id/txtUsernameHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="כינוי:"
+        android:textSize="20sp"
+        android:layout_below="@+id/txtPlayerHeadline"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp" />
+
+    <TextView
+        android:id="@+id/txtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="02354"
+        android:textSize="20sp"
+        android:background="@android:color/holo_green_light"
+        android:layout_below="@+id/txtPlayerHeadline"
+        android:layout_toLeftOf="@id/txtUsernameHead"
+        android:layout_marginRight="15dp" />
+
+    <TextView
+        android:id="@+id/txtTotalScoreHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="ניקוד:"
+        android:textSize="20sp"
+        android:layout_below="@+id/txtPlayerHeadline"
+        android:layout_toLeftOf="@id/txtUsername"
+        android:layout_marginRight="25dp" />
+
+    <TextView
+        android:id="@+id/txtTotalScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text=""
+        android:textSize="20sp"
+        android:background="@android:color/holo_green_light"
+        android:layout_below="@+id/txtPlayerHeadline"
+        android:layout_toLeftOf="@id/txtTotalScoreHead"
+        android:layout_marginRight="15dp" />
+
+    <TextView
+        android:id="@+id/txtWinsHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="נצחונות:"
+        android:textSize="18sp"
+        android:layout_below="@+id/txtUsernameHead"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp" />
+
+    <TextView
+        android:id="@+id/txtWins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="02"
+        android:textSize="18sp"
+        android:background="@android:color/holo_green_light"
+        android:layout_below="@+id/txtUsernameHead"
+        android:layout_toLeftOf="@id/txtWinsHead"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/txtLosesHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="הפסדים:"
+        android:textSize="18sp"
+        android:layout_below="@+id/txtUsernameHead"
+        android:layout_toLeftOf="@id/txtWins"
+        android:layout_marginRight="20dp" />
+
+    <TextView
+        android:id="@+id/txtLoses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="02"
+        android:textSize="18sp"
+        android:background="@android:color/holo_green_light"
+        android:layout_below="@+id/txtUsernameHead"
+        android:layout_toLeftOf="@id/txtLosesHead"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/txtRankHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="דירוג:"
+        android:textSize="18sp"
+        android:layout_below="@+id/txtUsernameHead"
+        android:layout_toLeftOf="@id/txtLoses"
+        android:layout_marginRight="20dp" />
+
+    <TextView
+        android:id="@+id/txtRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="02"
+        android:textSize="18sp"
+        android:background="@android:color/holo_green_light"
+        android:layout_below="@+id/txtUsernameHead"
+        android:layout_toLeftOf="@id/txtRankHead"
+        android:layout_marginRight="10dp" />
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtLeaderBoardHeadline"
+        android:id="@+id/tblScoreBoard"
+        android:layoutDirection="ltr"
+        android:stretchColumns="true"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+    </TableLayout>
+
+
+</RelativeLayout>

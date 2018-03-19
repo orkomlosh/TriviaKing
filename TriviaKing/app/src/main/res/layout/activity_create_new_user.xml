@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sadna.triviaking.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btnSendUserData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:background="@android:color/holo_blue_bright"
+        android:onClick="sendUserData"
+        android:text="שלח" />
+
+    <EditText
+        android:id="@+id/edtTxtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtTxtRepeatPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:gravity="right"
+        android:hint="סיסמא"
+        android:inputType="textPassword"
+        android:textAlignment="gravity" />
+
+    <EditText
+        android:id="@+id/edtTxtRepeatPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSendUserData"
+        android:layout_alignLeft="@+id/edtTxtPassword"
+        android:layout_alignStart="@+id/edtTxtPassword"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:gravity="right"
+        android:hint="חזור על הסיסמא"
+        android:inputType="textPassword"
+        android:textAlignment="gravity" />
+
+    <EditText
+        android:id="@+id/edtTxtMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtTxtUserName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:gravity="right"
+        android:hint="דואר אלקטרוני"
+        android:inputType="textEmailAddress"
+        android:textAlignment="gravity" />
+
+    <EditText
+        android:id="@+id/edtTxtUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtTxtPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:gravity="right"
+        android:hint="כינוי"
+        android:inputType="textEmailAddress"
+        android:textAlignment="gravity" />
+
+    <TextView
+        android:id="@+id/txtWarn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+        />
+
+</RelativeLayout>

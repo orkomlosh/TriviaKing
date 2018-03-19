@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    tools:context=".NewGameActivity">
+
+
+
+    <TextView
+        android:id="@+id/txtSearchForGame"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="8sp"
+        android:text="מחפש משחק פנוי..."
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        android:id="@+id/prgsBarTimer"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/txtSearchForGame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:max="60"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/txtSoon"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="8sp"
+        android:text="מיד תצטרף למשחק..."
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/prgsBarTimer"
+        android:layout_alignLeft="@+id/txtSearchForGame"
+        android:layout_alignStart="@+id/txtSearchForGame" />
+
+</RelativeLayout>

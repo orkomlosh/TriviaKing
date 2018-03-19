@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TriviaKing</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">Trivia King</string>
+    <string name="title_activity_main_connected">MainConnectedActivity</string>
+    <string name="new_user">עדיין לא רשום? לחץ כאן</string>
+    <string name="forgot_password">שכחתי סיסמא</string>
+    <string name="Search_for_game">חפש משחק</string>
+    <string name="play_with_friend">שחק עם חבר</string>
+    <string name="score_boards">טבלאות ניקוד</string>
+    <string name="logout">התנתק</string>
+    <string name="title_activity_create_new_user">CreateNewUserActivity</string>
+    <string name="title_activity_new_game">NewGameActivity</string>
+    <string name="title_activity_score">ScoreActivity</string>
+    <string name="title_activity_forgot_my_pass">ForgotMyPassActivity</string>
+    <string name="title_activity_change_password">ChangePasswordActivity</string>
+
+</resources>

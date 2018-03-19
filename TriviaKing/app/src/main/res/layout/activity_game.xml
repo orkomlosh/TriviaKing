@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    tools:context=".GameActivity">
+
+
+    <Button
+        android:id="@+id/btnAnswer2"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/btnAnswer4"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="checkAnswer"
+        android:text="answer2"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnAnswer1"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/btnAnswer3"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/btnAnswer2"
+        android:onClick="checkAnswer"
+        android:text="answer1"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnAnswer4"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:textSize="18sp"
+        android:text="answer4"
+        android:onClick="checkAnswer"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="40dp"
+        />
+
+    <Button
+        android:id="@+id/btnAnswer3"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="20dp"
+        android:textSize="18sp"
+        android:layout_marginBottom="40dp"
+        android:onClick="checkAnswer"
+        android:text="answer3"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btnAnswer4"/>
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="8sp"
+        android:text="what what what who who who why why why where where where there 1949?"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:background="@android:color/white"
+        android:layout_marginTop="98dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtFoeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="8sp"
+        android:text="שם היריב: "
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp" />
+
+    <TextView
+        android:id="@+id/txtScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="8sp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtFoeName"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="50dp"/>
+
+    <TextView
+        android:id="@+id/txtQuesScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="8sp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@id/txtScore"
+        android:layout_below="@id/txtFoeName"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/txtDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="8sp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@id/txtQuesScore"
+        android:layout_below="@id/txtFoeName"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/txtTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="8sp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/prgsBarTimer"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        android:id="@+id/prgsBarTimer"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/txtQuestion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:max="60"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/txtTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/prgsBarTimer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
